@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+       {{ form.as_p }}
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</body>
+</html>
+
+
+{% endblock body %}
